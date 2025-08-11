@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corny Collection</title>
-    <!-- Tailwind CSS via CDN -->
-    <link href="./src/output.css" rel="stylesheet">
+    <!-- Tailwind CSS (built) -->
+    <link href="style.css" rel="stylesheet">
 </head>
 
     <body class="bg-stone-600 text-gray-800">
@@ -35,32 +35,33 @@
                 <h2 class="text-4xl font-bold text-slate-50 mb-8 text-left font-sans">Featured Videos</h2>
                 <!-- Videos Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-                    
-                    <!-- Video 1 -->
+
+                    <!-- Self-hosted Video Example 1 -->
                     <div class="flex flex-col items-start">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Video Title 1</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/video_id_1" title="Video 1" frameborder="0" allowfullscreen></iframe>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Self-hosted Video 1</h3>
+                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
+                            <video class="w-full h-full object-cover" controls poster="assets/cornyCollection2.jpg">
+                                <source src="assets/video1.mp4" type="video/mp4">
+                                <source src="assets/video1.webm" type="video/webm">
+                                Your browser does not support the video tag. 
+                                <a href="assets/video1.mp4" download class="underline text-blue-400">Download the video</a>.
+                            </video>
                         </div>
-                        <p class="text-slate-50 mt-4 text-left">This is the description of Video 1, Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-slate-50 mt-4 text-left">This is a self-hosted video example. If you cannot view it, <a href="assets/video1.mp4" download class="underline text-blue-400">download here</a>.</p>
                     </div>
 
-                    <!-- Video 2 -->
+                    <!-- Self-hosted Video Example 2 -->
                     <div class="flex flex-col items-start">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Video Title 2</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/video_id_2" title="Video 2" frameborder="0" allowfullscreen></iframe>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Self-hosted Video 2</h3>
+                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
+                            <video class="w-full h-full object-cover" controls poster="assets/cornyCollection3.jpg">
+                                <source src="assets/video2.mp4" type="video/mp4">
+                                <source src="assets/video2.webm" type="video/webm">
+                                Your browser does not support the video tag. 
+                                <a href="assets/video2.mp4" download class="underline text-blue-400">Download the video</a>.
+                            </video>
                         </div>
-                        <p class="text-slate-50 mt-4 text-left">This is the description of Video 2, Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-
-                    <!-- Video 3 -->
-                    <div class="flex flex-col items-start">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Video Title 3</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/video_id_3" title="Video 3" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <p class="text-slate-50 mt-4 text-left">This is the description of Video 3, Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-slate-50 mt-4 text-left">This is another self-hosted video example. If you cannot view it, <a href="assets/video2.mp4" download class="underline text-blue-400">download here</a>.</p>
                     </div>
 
                 </div>
