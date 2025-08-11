@@ -7,6 +7,6 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
-    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && node tools/copy.js"
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && copyfiles -u 0 index.html assets/** dist"
   }
 }
