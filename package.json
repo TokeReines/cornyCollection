@@ -1,4 +1,5 @@
 {
+  "homepage": "https://TokeReines.github.io/cornyCollection",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "copyfiles": "^2.4.1",
