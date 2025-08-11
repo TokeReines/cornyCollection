@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -9,152 +9,134 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-    <body class="bg-stone-600 text-gray-800">
+<body class="bg-stone-600 text-gray-800">
 
-        <!-- Cover Section -->
-        <section class="bg-white flex flex-col items-center justify-between p-8 md:p-16 md:flex-row">
-            <!-- Text Content (Left) -->
-            <div class="md:w-1/2 text-left space-y-4 z-20">
-                <h1 class="text-4xl font-bold text-gray-800 font-mono md:text-5xl lg:text-8xl">Corny Collection</h1>
-                <p class="text-gray-600 text-lg ml-3">
-                    Tight dansemusik i øjenhøjde. Professionelt festorkester fra København, der spiller til bryllupper, firmafester og events i hele landet.
-                </p>
-            </div>
-        
-            <!-- Image Content -->
-            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                <img src="assets/cornyCollection.jpg" alt="Cover Image" class="w-3/4">
+    <!-- Cover Section -->
+    <section class="bg-white flex flex-col items-center justify-between p-8 md:p-16 md:flex-row">
+        <!-- Text Content (Left) -->
+        <div class="md:w-1/2 text-left space-y-4 z-20">
+            <h1 class="text-4xl font-bold text-gray-800 font-mono md:text-5xl lg:text-8xl">Corny Collection</h1>
+            <p class="text-gray-600 text-lg ml-3">
+                Blæs, fuld sound og dansestemning. Vi spiller hits, du kender, i friske live-arrangementer med masser af energi og nærvær. Det eneste, vi behøver, er en stikkontakt og et dansegulv.
+            </p>
+        </div>
+    
+        <!-- Image Content -->
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <img src="assets/cornyCollection.jpg" alt="Corny Collection live med blæs og fuld sound" class="w-3/4">
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <main class="pt-6">
+        <!-- Video Section -->
+        <section class="bg-stone-600 p-8 md:p-16 flex flex-col items-start">
+            <h2 class="text-4xl font-bold text-slate-50 mb-8 text-left font-sans">Videoer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+
+                <div class="flex flex-col items-start">
+                    <h3 class="text-xl font-semibold text-slate-50 mb-2">Video 1</h3>
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
+                        <video class="w-full h-full object-cover" controls poster="assets/cornyCollection2.jpg">
+                            <source src="assets/video1.mp4" type="video/mp4">
+                            <source src="assets/video1.webm" type="video/webm">
+                            Your browser does not support the video tag. 
+                            <a href="assets/video1.mp4" download class="underline text-blue-400">Download videoen</a>.
+                        </video>
+                    </div>
+                    <p class="text-slate-50 mt-4 text-left">Kan du ikke se videoen? <a href="assets/video1.mp4" download class="underline text-blue-400">Download den her</a>.</p>
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <h3 class="text-xl font-semibold text-slate-50 mb-2">Video 2</h3>
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
+                        <video class="w-full h-full object-cover" controls poster="assets/cornyCollection3.jpg">
+                            <source src="assets/video2.mp4" type="video/mp4">
+                            <source src="assets/video2.webm" type="video/webm">
+                            Your browser does not support the video tag. 
+                            <a href="assets/video2.mp4" download class="underline text-blue-400">Download videoen</a>.
+                        </video>
+                    </div>
+                    <p class="text-slate-50 mt-4 text-left">Kan du ikke se videoen? <a href="assets/video2.mp4" download class="underline text-blue-400">Download den her</a>.</p>
+                </div>
+
             </div>
         </section>
-    
-        <!-- Main Section -->
-        <main class="pt-6">
-            <!-- Video Section -->
-            <section class="bg-stone-600 p-8 md:p-16 flex flex-col items-start">
-                <!-- Section Title -->
-                <h2 class="text-4xl font-bold text-slate-50 mb-8 text-left font-sans">Videoer</h2>
-                <!-- Videos Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
 
-                    <!-- Self-hosted Video Example 1 -->
-                    <div class="flex flex-col items-start">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Video 1</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
-                            <video class="w-full h-full object-cover" controls poster="assets/cornyCollection2.jpg">
-                                <source src="assets/video1.mp4" type="video/mp4">
-                                <source src="assets/video1.webm" type="video/webm">
-                                Your browser does not support the video tag. 
-                                <a href="assets/video1.mp4" download class="underline text-blue-400">Download the video</a>.
-                            </video>
-                        </div>
-                        <p class="text-slate-50 mt-4 text-left">Kan du ikke se videoen? <a href="assets/video1.mp4" download class="underline text-blue-400">Download den her</a>.</p>
-                    </div>
-
-                    <!-- Self-hosted Video Example 2 -->
-                    <div class="flex flex-col items-start">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Video 2</h3>
-                        <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
-                            <video class="w-full h-full object-cover" controls poster="assets/cornyCollection3.jpg">
-                                <source src="assets/video2.mp4" type="video/mp4">
-                                <source src="assets/video2.webm" type="video/webm">
-                                Your browser does not support the video tag. 
-                                <a href="assets/video2.mp4" download class="underline text-blue-400">Download the video</a>.
-                            </video>
-                        </div>
-                        <p class="text-slate-50 mt-4 text-left">Kan du ikke se videoen? <a href="assets/video2.mp4" download class="underline text-blue-400">Download den her</a>.</p>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- About Us Section -->
-            <section class="bg-stone-200 p-8 md:p-16">
-                <div class="flex flex-col md:flex-row items-start sm:items-center md:items-start sm:gap-8 md:gap-16">
-                    
-                    <!-- Left Side: Picture (Image Column) -->
-                    <div class="sm:w-1/2 md:w-1/3 mb-6 sm:mb-0 flex justify-center sm:justify-end">
-                        <img src="assets/cornyCollection3.jpg" alt="Descriptive Alt Text 1" class="w-full max-w-xs sm:max-w-sm md:max-w-none rounded-lg shadow-lg">
-                    </div>
-
-                    <!-- Right Side: Title and Text (Text Column) -->
-                    <div class="sm:w-1/2 md:w-2/3 space-y-4 text-center sm:text-left">
-                        <h2 class="text-4xl font-bold mb-4">Om os</h2>
-                        <p class="text-gray-700">
-                            Corny Collection er et professionelt festorkester fra København, der byder på musik med fyldig sound og stærkt blæs. Tag ikke fejl af vores sort-hvide, stilrene look – vi leverer nærværende, energisk og uprætentiøs stemning, der samler folk på dansegulvet.
-                        </p>
-                        <p class="text-gray-700">
-                            Vi spiller sange, du kender – fra Thomas Helmig og Michael Jackson til Anne Linnet, Earth, Wind & Fire, Emil Stabil og Andreas Odbjerg. Vi blander det klassiske og det moderne i arrangementer, der er skrevet til vores otte mand store besætning: trommer, tuba med octaver, to trompeter, altsax, tenorsax, trombone og sang.
-                        </p>
-                        <p class="text-gray-700">
-                            Vi tilbyder op til to set af 50 minutters varighed. Det er live, det er fest, og det er gennemarbejdet. Vores arrangementer sidder fast, så vi kan fokusere på at være til stede i musikken og skabe kontakt med publikum.
-                        </p>
-                        <p class="text-gray-700">
-                            Corny Collection kommer med alt gear selv og er vant til at spille til bryllupper, firmafester og arrangementer, hvor der er brug for et band, der både kan spille stramt og være i øjenhøjde med gæsterne. Det eneste, du skal gøre, er at sørge for strøm og et dansegulv.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Full-Width Image Section -->
-            <section class="w-full h-1/2 overflow-hidden">
-                <img src="assets/cornyCollection2.jpg" alt="Descriptive Alt Text" class="w-full h-2/3 object-cover">
-            </section>
-        </main>
-
-        <!-- Footer Section -->
-        <footer class="bg-stone-600 text-white p-8 md:p-16">
-            <!-- Footer section -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Us Section -->
+        <section class="bg-stone-200 p-8 md:p-16">
+            <div class="flex flex-col md:flex-row items-start sm:items-center md:items-start sm:gap-8 md:gap-16">
                 
-                <!-- Left Side: Title and Description (1/3) -->
-                <div class="col-span-1">
-                    <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
-                    <p class="text-gray-300">Book Corny Collection til din næste fest, bryllup eller firmaevent. Vi svarer hurtigt på både mail og telefon!</p>
+                <div class="sm:w-1/2 md:w-1/3 mb-6 sm:mb-0 flex justify-center sm:justify-end">
+                    <img src="assets/cornyCollection3.jpg" alt="Corny Collection blæsersektion på scenen" class="w-full max-w-xs sm:max-w-sm md:max-w-none rounded-lg shadow-lg">
+                </div>
+
+                <div class="sm:w-1/2 md:w-2/3 space-y-4 text-center sm:text-left">
+                    <h2 class="text-4xl font-bold mb-4">Om os</h2>
+
+                    <p class="text-gray-700">
+                        Corny Collection er et københavnsk festorkester med blæs i front og en fuldfed live-sound, der samler folk på dansegulvet. Vi spiller musik, gæsterne kender – ikke som korte radio-edits, men som gamle toner i nye klæder, skræddersyet til et livligt dansegulv.
+                    </p>
+
+                    <p class="text-gray-700">
+                        Repertoiret spænder fra Det Brune Punktum og Anne Linnet til Earth, Wind &amp; Fire, Emil Stabil og Andreas Odbjerg. Vi mixer klassikere og nutidige hits i arrangementer, der banker igennem med nærvær og energi.
+                    </p>
+
+                    <p class="text-gray-700">
+                        Besætningen er syv mand med stærk blæsersektion: trommer, tuba m. octaver, to trompeter, altsax, tenorsax, trombone og vokal. Vi spiller op til to sæt á 45 minutter – stramt, gennemarbejdet og 100% live.
+                    </p>
+
+                    <p class="text-gray-700">
+                        Vi tager alt gear med og er vant til at spille bryllupper, firmafester og byfester. Du sørger for strøm og et dansegulv – vi leverer resten.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full h-1/2 overflow-hidden">
+            <img src="assets/cornyCollection2.jpg" alt="Publikum danser til Corny Collection" class="w-full h-2/3 object-cover">
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-stone-600 text-white p-8 md:p-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
+                <p class="text-gray-300">Book Corny Collection til din næste fest, bryllup eller firmaevent. Vi svarer hurtigt på både mail og telefon!</p>
+            </div>
+            
+            <div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-8">
+                <div class="flex flex-col space-y-4">
+                    <div>
+                        <h3 class="text-lg font-semibold">Email</h3>
+                        <p><a href="mailto:cornycollection@gmail.com" class="text-slate-50 hover:underline">cornycollection@gmail.com</a></p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold">Telefon</h3>
+                        <p class="text-gray-300">+45 29 21 07 19</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold">By</h3>
+                        <p class="text-gray-300">København – men vi spiller i hele landet!</p>
+                    </div>
                 </div>
                 
-                <!-- Right Side: Contact Information and Social Media (2/3) -->
-                <div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-8">
-                    
-                    <!-- Contact Information Column -->
-                    <div class="flex flex-col space-y-4">
-                        <!-- Email Contact -->
-                        <div>
-                            <h3 class="text-lg font-semibold">Email</h3>
-                            <p><a href="mailto:cornycollection@gmail.com" class="text-slate-50 hover:underline">cornycollection@gmail.com</a></p>
-                        </div>
-                        
-                        <!-- Phone Contact -->
-                        <div>
-                            <h3 class="text-lg font-semibold">Telefon</h3>
-                            <p class="text-gray-300">+45 29 21 07 19</p>
-                        </div>
-
-                        <!-- Address -->
-                        <div>
-                            <h3 class="text-lg font-semibold">By</h3>
-                            <p class="text-gray-300">København – men vi spiller i hele landet!</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Follow Us Section -->
-                    <div class="flex flex-col items-center space-y-4 sm:items-start sm:space-y-0">
-                        <h3 class="text-lg font-semibold">Følg os</h3>
-                        
-                        <!-- Social Media Links -->
-                        <div class="flex space-x-4">
-                            <!-- Facebook -->
-                            <a href="https://www.facebook.com/cornycollection/" target="_blank" class="text-slate-50 hover:underline">
-                                <img src="assets/icons8-facebook-50.png" alt="Facebook Icon" class="h-10 w-10">
-                            </a>
-                            
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/CornyCollection/" target="_blank" class="text-slate-50 hover:underline">
-                                <img src="assets/icons8-instagram-50.png" alt="Instagram Icon" class="h-10 w-10">
-                            </a>
-                        </div>
+                <div class="flex flex-col items-center space-y-4 sm:items-start sm:space-y-0">
+                    <h3 class="text-lg font-semibold">Følg os</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/cornycollection/" target="_blank" class="text-slate-50 hover:underline" aria-label="Corny Collection på Facebook">
+                            <img src="assets/icons8-facebook-50.png" alt="Facebook" class="h-10 w-10">
+                        </a>
+                        <a href="https://www.instagram.com/CornyCollection/" target="_blank" class="text-slate-50 hover:underline" aria-label="Corny Collection på Instagram">
+                            <img src="assets/icons8-instagram-50.png" alt="Instagram" class="h-10 w-10">
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
