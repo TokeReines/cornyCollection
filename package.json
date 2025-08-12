@@ -3,11 +3,13 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "copyfiles": "^2.4.1",
+    "live-server": "^1.2.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
     "dev": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
-    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && copyfiles -u 0 index.html assets/** dist"
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && copyfiles -u 0 index.html assets/** dist",
+  "serve": "npx live-server dist --port=8080 --open=./index.html"
   }
 }
