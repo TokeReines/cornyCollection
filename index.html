@@ -5,7 +5,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tokerreines.github.io/cornyCollection/">
     <link rel="preload" as="image" href="assets/cornyCollection.jpg">
-    <link rel="icon" type="image/png" href="assets/cornyCollection.jpg">
+    <link rel="icon" type="image/png" href="assets/cornyCollection_christmas.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Corny Collection – Festband med blæs og fuld sound i København</title>
@@ -59,7 +59,7 @@
             <p class="text-gray-600 text-lg ml-3">
                 Blæs, fuld sound og dansestemning. Vi spiller hits, du kender, i friske live-arrangementer med masser af energi og nærvær. Det eneste, vi behøver, er en stikkontakt og et dansegulv.
             </p>
-            <div class="mt-6 ml-3 flex flex-wrap gap-3">
+                            <!-- Left arrow -->
             <a
                 href="mailto:cornycollection@gmail.com?subject=Booking%20forespørgsel%20–%20Corny%20Collection&body=Dato%3A%0ASted%3A%0AAnledning%3A%0AAntal%20g%C3%A6ster%3A%0ABudget/ramme%3A%0A"
                 target="_blank" rel="noopener"
@@ -68,6 +68,7 @@
                 Book nu
             </a>
 
+                            <!-- Right arrow -->
             <a
                 href="#kontakt"
                 class="inline-flex items-center rounded-xl px-6 py-3 font-semibold text-amber-700 ring-1 ring-amber-500/50 hover:bg-amber-50 focus:outline-none focus:ring-2 focus:ring-amber-400"
@@ -80,7 +81,7 @@
     
         <!-- Image Content -->
         <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-            <img src="assets/cornyCollection.jpg" alt="Corny Collection – festband spiller live med blæs og fuld sound i København" class="w-3/4">
+            <img src="assets/cornyCollection_christmas.jpg" alt="Corny Collection – festband spiller live med blæs og fuld sound i København" class="w-3/4">
         </div>
     </section>
 
@@ -97,9 +98,25 @@
                         <!-- Wrapper med pile -->
                         <div class="relative flex items-center">
                             <!-- Venstre pil -->
-                            <button id="carousel-prev" type="button"
-                                class="absolute -left-12 top-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full p-3 shadow-lg hover:scale-110 transition transform duration-300 focus:outline-none z-10">
-                                <span aria-hidden="true" class="text-xl font-bold">&larr;</span>
+                            <button id="carousel-prev" type="button" aria-label="Previous member" title="Forrige"
+                                class="group absolute -left-16 top-1/2 -translate-y-1/2 inline-flex items-center justify-center
+                                        w-8 h-8 sm:w-8 sm:h-8 rounded-full
+                                        bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700
+                                        text-white
+                                        shadow-lg shadow-amber-900/10 ring-1 ring-white/30
+                                        transition-transform duration-300 motion-reduce:transition-none motion-reduce:transform-none
+                                        hover:scale-105 active:scale-95
+                                        focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-300/60
+                                        z-10">
+                                <!-- subtle glow -->
+                                <span class="absolute inset-0 rounded-full bg-white/10 opacity-0 blur-sm transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"></span>
+                                <!-- icon -->
+                                <svg class="relative w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-300 group-hover:-translate-x-0.5"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                                <span class="sr-only">Forrige</span>
                             </button>
 
                             <!-- Billede -->
@@ -109,9 +126,23 @@
                             </div>
 
                             <!-- Højre pil -->
-                            <button id="carousel-next" type="button"
-                                class="absolute -right-12 top-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full p-3 shadow-lg hover:scale-110 transition transform duration-300 focus:outline-none z-10">
-                                <span aria-hidden="true" class="text-xl font-bold">&rarr;</span>
+                            <button id="carousel-next" type="button" aria-label="Next member" title="Næste"
+                            class="group absolute -right-16 top-1/2 -translate-y-1/2 inline-flex items-center justify-center
+                                    w-8 h-8 sm:w-8 sm:h-8 rounded-full
+                                    bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700
+                                    text-white
+                                    shadow-lg shadow-amber-900/10 ring-1 ring-white/30
+                                    transition-transform duration-300 motion-reduce:transition-none motion-reduce:transform-none
+                                    hover:scale-105 active:scale-95
+                                    focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-300/60
+                                    z-10">
+                            <span class="absolute inset-0 rounded-full bg-white/10 opacity-0 blur-sm transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"></span>
+                            <svg class="relative w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-300 group-hover:translate-x-0.5"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                            <span class="sr-only">Næste</span>
                             </button>
                         </div>
 
@@ -127,12 +158,12 @@
 
                     <script>
                     const carouselData = [
-                        { src: 'assets/mathias.jpg', alt: 'Mathias på tuba', name: 'Mathias', caption: 'Tuba. Med højt humør og en pulserende bas holder han toget kørende. Ingen fest uden Mathias.' },
-                        { src: 'assets/nikolaj.jpg', alt: 'Nikolaj på trommer', name: 'Nikolaj', caption: 'Trommer. Disker op med usynlige temposkift og vilde grooves, når gryderne koger.' },
-                        { src: 'assets/toke_laurits.jpg', alt: 'Toke (sax) & Laurits (trombone)', name: 'Toke & Laurits', caption: 'Altsax & trombone. Smører stemningen og lægger ekstra lag på, når det skal være lækkert!' },
-                        { src: 'assets/mikkel_stig.jpg', alt: 'Mikkel & Stig på trompet', name: 'Mikkel & Stig', caption: 'Trompet. Hovedingrediensen i vores sound - og altid klar med et skævt smil.' },
-                        { src: 'assets/jesper.jpg', alt: 'Jesper', name: 'Jesper', caption: 'Tenorsax. Får folk til at sove om dagen (anæstesiolog), men holder dem vågne hele natten med sax og batman-vibes.' },
-                        { src: 'assets/line.jpg', alt: 'Line', name: 'Line', caption: 'Sang. Brygger af kærligheden der binder os og publikum sammen. Synger så selv Freddie Mercury kunne tage sig et hvil.' }
+                        { src: 'assets/mathias_christmas.jpg', alt: 'Mathias på tuba', name: 'Mathias', caption: 'Tuba. Med højt humør og en pulserende bas holder han toget kørende. Ingen fest uden Mathias.' },
+                        { src: 'assets/nikolaj_christmas.jpg', alt: 'Nikolaj på trommer', name: 'Nikolaj', caption: 'Trommer. Disker op med usynlige temposkift og vilde grooves, når gryderne koger.' },
+                        { src: 'assets/toke_laurits_christmas.jpg', alt: 'Toke (sax) & Laurits (trombone)', name: 'Toke & Laurits', caption: 'Altsax & trombone. Smører stemningen og lægger ekstra lag på, når det skal være lækkert!' },
+                        { src: 'assets/mikkel_stig_christmas.jpg', alt: 'Mikkel & Stig på trompet', name: 'Mikkel & Stig', caption: 'Trompet. Hovedingrediensen i vores sound - og altid klar med et skævt smil.' },
+                        { src: 'assets/jesper_christmas.jpg', alt: 'Jesper', name: 'Jesper', caption: 'Tenorsax. Får folk til at sove om dagen (anæstesiolog), men holder dem vågne hele natten med sax og batman-vibes.' },
+                        { src: 'assets/line_christmas.jpg', alt: 'Line', name: 'Line', caption: 'Sang. Brygger af kærligheden der binder os og publikum sammen. Synger så selv Freddie Mercury kunne tage sig et hvil.' }
                     ];
 
                     let carouselIdx = 0;
@@ -173,31 +204,57 @@
                         }, 200);
                     }
 
-                    document.getElementById('carousel-prev').onclick = () => {
-                        carouselIdx = (carouselIdx - 1 + carouselData.length) % carouselData.length;
-                        showCarousel(carouselIdx);
-                    };
-                    document.getElementById('carousel-next').onclick = () => {
-                        carouselIdx = (carouselIdx + 1) % carouselData.length;
-                        showCarousel(carouselIdx);
-                    };
-
-                    let autoSlide = setInterval(() => {
-                        carouselIdx = (carouselIdx + 1) % carouselData.length;
-                        showCarousel(carouselIdx);
-                    }, 4000);
-
-                    document.getElementById('carousel').addEventListener('mouseenter', () => clearInterval(autoSlide));
-                    document.getElementById('carousel').addEventListener('mouseleave', () => {
+                    let autoSlide = null;
+                    const INTERVAL_MS = 6000; // langsommere
+                    let clickLock = false; // debounce hurtige klik
+                    function startAuto() {
+                        if (autoSlide) clearInterval(autoSlide);
                         autoSlide = setInterval(() => {
                             carouselIdx = (carouselIdx + 1) % carouselData.length;
                             showCarousel(carouselIdx);
-                        }, 4000);
+                        }, INTERVAL_MS);
+                    }
+                    document.getElementById('carousel-prev').onclick = () => {
+                        if (clickLock) return;
+                        clickLock = true;
+                        carouselIdx = (carouselIdx - 1 + carouselData.length) % carouselData.length;
+                        showCarousel(carouselIdx);
+                        startAuto();
+                        setTimeout(() => clickLock = false, 350);
+                    };
+                    document.getElementById('carousel-next').onclick = () => {
+                        if (clickLock) return;
+                        clickLock = true;
+                        carouselIdx = (carouselIdx + 1) % carouselData.length;
+                        showCarousel(carouselIdx);
+                        startAuto();
+                        setTimeout(() => clickLock = false, 350);
+                    };
+                    // Reset timer on dot click (wrap original listener)
+                    const originalRenderDots = renderDots;
+                    renderDots = function() {
+                        dotsContainer.innerHTML = '';
+                        carouselData.forEach((_, idx) => {
+                            const dot = document.createElement('button');
+                            dot.className = `w-3 h-3 rounded-full ${idx === carouselIdx ? 'bg-amber-600' : 'bg-gray-400'} hover:bg-amber-500 transition`;
+                            dot.addEventListener('click', () => {
+                                carouselIdx = idx;
+                                showCarousel(idx);
+                                startAuto();
+                            });
+                            dotsContainer.appendChild(dot);
+                        });
+                    };
+                    document.getElementById('carousel').addEventListener('mouseenter', () => {
+                        if (autoSlide) clearInterval(autoSlide);
                     });
-
+                    document.getElementById('carousel').addEventListener('mouseleave', () => {
+                        startAuto();
+                    });
                     showCarousel(0);
+                    startAuto();
                     </script>
-                    <!-- Carousel slut -->
+                    <!-- Carousel end -->
 
 
                 </div>
@@ -236,7 +293,7 @@
                 <div class="flex flex-col items-start">
                     <h3 class="text-xl font-semibold text-slate-50 mb-2">Video 1</h3>
                     <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
-                        <video class="w-full h-full object-cover" controls poster="assets/cornyCollection2.jpg">
+                        <video class="w-full h-full object-cover" controls poster="assets/cornyCollection2_christmas.jpg">
                             <source src="assets/video1.mp4" type="video/mp4">
                             <source src="assets/video1.webm" type="video/webm">
                             Your browser does not support the video tag. 
@@ -264,7 +321,7 @@
 
 
         <section class="w-full h-1/2 overflow-hidden">
-            <img src="assets/cornyCollection2.jpg" alt="Publikum danser til Corny Collection festband i København" class="w-full h-2/3 object-cover">
+            <img src="assets/cornyCollection2_christmas.jpg" alt="Publikum danser til Corny Collection festband i København" class="w-full h-2/3 object-cover">
         </section>
     </main>
 
