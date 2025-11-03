@@ -1,15 +1,20 @@
 {
   "homepage": "https://TokeReines.github.io/cornyCollection",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
+    "copy:static": "mkdir -p dist && cp index.html dist/index.html && cp -R assets dist/",
+    "dev:static": "chokidar 'index.html' 'assets/**/*' -c 'npm run copy:static'",
+    "serve": "live-server dist --port=8080 --open=./index.html",
+    "start": "npm-run-all -p dev:css dev:static serve",
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && npm run copy:static"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "chokidar-cli": "^3.0.0",
     "copyfiles": "^2.4.1",
-    "live-server": "^1.2.2",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
-  },
-  "scripts": {
-    "dev": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
-    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && copyfiles -u 0 index.html assets/** dist",
-  "serve": "npx live-server dist --port=8080 --open=./index.html"
   }
 }
