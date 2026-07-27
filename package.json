@@ -1,9 +1,9 @@
 {
-  "homepage": "https://TokeReines.github.io/cornyCollection",
+  "homepage": "https://cornycollection.dk",
   "scripts": {
     "dev:css": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
-    "copy:static": "mkdir -p dist && cp index.html dist/index.html && cp -R assets dist/",
-    "dev:static": "chokidar 'index.html' 'assets/**/*' -c 'npm run copy:static'",
+    "copy:static": "mkdir -p dist && cp index.html robots.txt sitemap.xml CNAME dist/ && cp -R assets dist/",
+    "dev:static": "chokidar 'index.html' 'robots.txt' 'sitemap.xml' 'CNAME' 'assets/**/*' -c 'npm run copy:static'",
     "serve": "live-server dist --port=8080 --open=./index.html",
     "start": "npm-run-all -p dev:css dev:static serve",
     "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify && npm run copy:static"
